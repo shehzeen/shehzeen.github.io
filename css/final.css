@@ -251,7 +251,7 @@ section {
   font-size: 44px;
   color: #000000;
   letter-spacing: 0;
-  line-height: 0.4em;
+  /*line-height: 0.4em;*/
 }
 
 .process-item {
