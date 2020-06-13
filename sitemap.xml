@@ -23,6 +23,11 @@
   </url>
   
   <url>
+    <loc>/news/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/preprints/</loc>
     <priority>0</priority>
   </url>
