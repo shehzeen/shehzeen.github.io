@@ -66,14 +66,14 @@ The Challenge TEDxADMU always faced the same problems every year. How can we ele
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/publications/</guid>
-      <description>Adversarial Deepfakes: Evaluating Vulnerability of Deepfake Detectors to Adversarial Examples Shehzeen Hussain*, Paarth Neekhara*, Malhar Jere, Farinaz Koushanfar, Julian McAuley
+      <description>Waveguard: Understanding and Mitigating Audio Adversarial Attacks Shehzeen Hussain*, Paarth Neekhara*, Shlomo Dubnov, Julian McAuley, Farinaz Koushanfar
+USENIX Security Symposium (USENIX) 2021
+[ * Equal Contribution ]
+[ paper]
+ Adversarial Deepfakes: Evaluating Vulnerability of Deepfake Detectors to Adversarial Examples Shehzeen Hussain*, Paarth Neekhara*, Malhar Jere, Farinaz Koushanfar, Julian McAuley
 Winter Conference on Applications in Computer Vision (WACV) 2021
 [ * Equal Contribution ]
-[ paper, video examples ]
- Universal Adversarial Perturbations for Speech Recognition Systems Paarth Neekhara*, Shehzeen Hussain*, Prakhar Pandey, Shlomo Dubnov, Julian McAuley, Farinaz Koushanfar
-Interspeech 2019
-[ * Equal Contribution ]
-[ paper, audio examples ]</description>
+[ paper, video examples ]</description>
     </item>
     
     <item>
