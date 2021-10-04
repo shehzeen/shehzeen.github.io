@@ -83,10 +83,14 @@ Asian Conference on Machine Learning (ACML) 2021
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/research_experience/</guid>
-      <description>Facebook AI Research June 2020 - September 2020
+      <description>Qualcomm Technologies Research June 2021 - September 2021
+San Diego, California
+Deep Learning R&amp;amp;D Intern
+I was a part of the Qualcomm Audio R&amp;amp;D team working on self-supervised learning, using Transformer+CNN architectures for effective keyword spotting and speaker verification.
+ Facebook AI Research June 2020 - September 2020
 Menlo Park, California
 Research Intern
-I was a member of the Text-to-Speech Synthesis team within Applied AI Speech. I developed deep neural network models for multi-speaker and multi-style controllable speech synthesis. I also designed end-to-end pipeline for joint training of speaker encoder model with text-to-speech synthesis (Tacotron2) model. Additionally, I developed a voice cloning toolkit for synthesizing speech of unseen speakers from a few reference audio samples.</description>
+I was a member of the Text-to-Speech Synthesis team within Applied AI Speech. I developed deep neural network models for multi-speaker and multi-style controllable speech synthesis.</description>
     </item>
     
   </channel>
