@@ -46,7 +46,7 @@ The Challenge TEDxADMU always faced the same problems every year. How can we ele
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/news/</guid>
-      <description> Our paper on Expressive Neural Voice Cloning got accepted at ACML 2021! Our paper on Cross-modal Adversarial Reprogramming got accepted at WACV 2022! Our paper Waveguard: Understanding and Mitigating Audio Adversarial Attacks got accepted at USENIX Security 2021!  </description>
+      <description> Read our FaceSigns preprint - SemiFragile Watermarking for media authentication  Our paper on Multi-task Voice Activated Framework using Self-supervised Learning got accepted at ICASSP 2022! Our paper on Cross-modal Adversarial Reprogramming got accepted at WACV 2022! Our paper on Expressive Neural Voice Cloning got accepted at ACML 2021! Our paper Waveguard: Understanding and Mitigating Audio Adversarial Attacks got accepted at USENIX Security 2021!  </description>
     </item>
     
     <item>
@@ -66,15 +66,14 @@ The Challenge TEDxADMU always faced the same problems every year. How can we ele
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/publications/</guid>
-      <description>Cross-modal Adversarial Reprogramming Paarth Neekhara*, Shehzeen Hussain*, Jinglong Du, Shlomo Dubnov, Farinaz Koushanfar, Julian McAuley
+      <description>Multi-task Voice Activated Framework using Self-supervised Learning Shehzeen Hussain, Van Nguyen, Shuhua Zhang, Erik Visser
+IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) 2022
+[ paper ]
+ Cross-modal Adversarial Reprogramming Paarth Neekhara*, Shehzeen Hussain*, Jinglong Du, Shlomo Dubnov, Farinaz Koushanfar, Julian McAuley
 IEEE Winter Conference on Applications in Computer Vision (WACV) 2022
 [ * Equal Contribution ]
 [ paper ]
- Expressive Neural Voice Cloning Paarth Neekhara*, Shehzeen Hussain*, Shlomo Dubnov, Farinaz Koushanfar, Julian McAuley
-Asian Conference on Machine Learning (ACML) 2021
-[ * Equal Contribution ]
-[ paper, audio examples ]
- Waveguard: Understanding and Mitigating Audio Adversarial Attacks Shehzeen Hussain*, Paarth Neekhara*, Shlomo Dubnov, Julian McAuley, Farinaz Koushanfar</description>
+ Expressive Neural Voice Cloning Paarth Neekhara*, Shehzeen Hussain*, Shlomo Dubnov, Farinaz Koushanfar, Julian McAuley</description>
     </item>
     
     <item>
@@ -86,11 +85,11 @@ Asian Conference on Machine Learning (ACML) 2021
       <description>Qualcomm Technologies Research June 2021 - September 2021
 San Diego, California
 Deep Learning R&amp;amp;D Intern
-I was a part of the Qualcomm Audio R&amp;amp;D team working on self-supervised learning, using Transformer+CNN architectures for effective keyword spotting and speaker verification.
+I was a part of the Qualcomm Audio R&amp;amp;D team working on self-supervised learning, using Transformer+CNN architectures for effective keyword spotting and speaker verification. Our work achieved new state-of-the-art. [ paper ]
  Facebook AI Research June 2020 - September 2020
 Menlo Park, California
 Research Intern
-I was a member of the Text-to-Speech Synthesis team within Applied AI Speech. I developed deep neural network models for multi-speaker and multi-style controllable speech synthesis.</description>
+I was a member of the Text-to-Speech Synthesis team within Applied AI Speech.</description>
     </item>
     
   </channel>
