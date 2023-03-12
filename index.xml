@@ -79,14 +79,14 @@ International Conference On Computer Aided Design (ICCAD) 2022</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/research_experience/</guid>
-      <description>Qualcomm Technologies Research June 2021 - September 2021
+      <description>NVIDIA Corporation June 2022 - September 2022
+Santa Clara, California
+Research Intern - Deep Learning
+Designed deep neural networks for voice conversion and text-to-speech synthesis. Developed state-of-the-art zero-shot voice conversion framework with speaker-adaptive pitch and duration controllability [ paper ]
+ Qualcomm Technologies Research June 2021 - September 2021
 San Diego, California
 Deep Learning R&amp;amp;D Intern
-I was a part of the Qualcomm Audio R&amp;amp;D team working on self-supervised learning, using Transformer+CNN architectures for effective keyword spotting and speaker verification. Our work achieved new state-of-the-art. [ paper ]
- Facebook AI Research June 2020 - September 2020
-Menlo Park, California
-Research Intern
-I was a member of the Text-to-Speech Synthesis team within Applied AI Speech.</description>
+I was a part of the Qualcomm Audio R&amp;amp;D team working on self-supervised learning, using Transformer+CNN architectures for effective keyword spotting and speaker verification.</description>
     </item>
     
   </channel>
