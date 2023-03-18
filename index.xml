@@ -46,7 +46,7 @@ The Challenge TEDxADMU always faced the same problems every year. How can we ele
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/news/</guid>
-      <description> Our paper NetFlick: Adversarial Flickering Attacks on Deep Learning Based Video Compression got accepted at International Conference on Learning Representations (ICLR) 2023 Workshop! Our paper ACE-VC: Adaptive and Controllable Voice Conversion using Explicitly Disentangled Self-supervised Speech Representations got accepted at ICASSP 2023!  </description>
+      <description> Our paper NetFlick: Adversarial Flickering Attacks on Deep Learning Based Video Compression got accepted at International Conference on Learning Representations (ICLR) 2023 Workshop! Our paper ACE-VC: Adaptive and Controllable Voice Conversion using Explicitly Disentangled Self-supervised Speech Representations got accepted at ICASSP 2023! Our paper ReFace: Adversarial Transformation Networks for Real-time Attacks on Face Recognition Systems got accepted at IEEE International Conference on Dependable Systems and Network (DSN) 2023!  </description>
     </item>
     
     <item>
@@ -69,8 +69,8 @@ The Challenge TEDxADMU always faced the same problems every year. How can we ele
       <description>ACE-VC: Adaptive and Controllable Voice Conversion using Explicitly Disentangled Self-supervised Speech Representations Shehzeen Hussain, Paarth Neekhara, Jocelyn Huang, Jason Li, Boris Ginsburg
 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) 2023
 [ paper, audio examples ]
- FastStamp: Accelerating Neural Steganography and Digital Watermarking of Images on FPGAs Shehzeen Hussain, Nojan Sheybani, Paarth Neekhara, Xinqiao Zhang, Javier Duarte, Farinaz Koushanfar
-International Conference On Computer Aided Design (ICCAD) 2022</description>
+ ReFace: Adversarial Transformation Networks for Real-time Attacks on Face Recognition Systems Shehzeen Hussain, Todd Huster, Chris Mesterharm, Paarth Neekhara, Farinaz Koushanfar
+IEEE International Conference on Dependable Systems and Network (DSN) 2023</description>
     </item>
     
     <item>
