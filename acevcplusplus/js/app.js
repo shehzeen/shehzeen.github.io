@@ -2,7 +2,7 @@
  //webkitURL is deprecated but nevertheless
 URL = window.URL || window.webkitURL;
 
-var api_address = "https://97e6-138-68-131-51.ngrok.io";
+var api_address = "https://textlessvc.ngrok.app";
 var session_key = "test_session";
 var _testing = false;
 
@@ -50,17 +50,15 @@ var total_examples = 1;
 var all_blobs = [];
 
 var target_speakers = [
-    {'obama': 'Obama'},
-    {'modi' : 'Modi'},
-    {'ravish' : 'Ravish'},
-    {'priyanka' : 'Priyanka'},
-    {'lex' : 'Lex'},
+    {'obama': 'Barack Obama'},
+    {'modi' : 'Narendra Modi'},
+    {'lex' : 'Lex Fridman'},
     {'oprah': 'Oprah'},
-    {'emma': 'Emma'},
-    {'miley' : 'Miley'},
-    {'aubrey' : 'Aubrey'},
-    {'sundar' : 'Sundar'},
-    {'ahmadCorrect' : 'Ahmad (Correct)'},
+    {'emma': 'Emma Watson'},
+    {'miley' : 'Miley Cyrus'},
+    {'aubrey' : 'Aubrey Plaza'},
+    {'sundar' : 'Sundar Pichai'},
+    {'priyanka' : 'Priyanka Chopra'},
     {'custom': 'Custom (Select Audio File)'},
 ]
 
