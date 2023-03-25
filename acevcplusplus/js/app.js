@@ -3,9 +3,10 @@
 URL = window.URL || window.webkitURL;
 
 var api_address = "https://textlessvc.ngrok.app";
+// var api_address = "http://localhost:5000";
 var session_key = "test_session";
 var _testing = false;
-
+var loader_gif = '<img src="/acevcplusplus/gifs/loader.gif" style="width: 50px; height: 50px;">';
 
 
 var gumStream;                      //stream from getUserMedia()
@@ -52,13 +53,12 @@ var all_blobs = [];
 var target_speakers = [
     {'obama': 'Barack Obama'},
     {'modi' : 'Narendra Modi'},
+    {'priyanka' : 'Priyanka Chopra'},
     {'lex' : 'Lex Fridman'},
     {'oprah': 'Oprah'},
     {'emma': 'Emma Watson'},
-    {'miley' : 'Miley Cyrus'},
     {'aubrey' : 'Aubrey Plaza'},
     {'sundar' : 'Sundar Pichai'},
-    {'priyanka' : 'Priyanka Chopra'},
     {'custom': 'Custom (Select Audio File)'},
 ]
 
@@ -264,6 +264,42 @@ function makeUploadButtonActive(){
     $("#uploadButton").prop("disabled", false);
 }
 
+
+function get_avatar(){
+
+    // for(var rn = 0; rn < total_examples; rn++){
+        
+    // }
+    var xhr=new XMLHttpRequest();
+    loader_gif + ""
+    var loading_content = "<center>" + loader_gif + " Converted audio is ready in the table above. Generating video avatar... This can take upto 30 seconds. </center>";
+    $("#videoContainer").html(loading_content);
+    xhr.onload=function(e) {
+        if(this.readyState === 4) {
+            if(this.status === 200) {
+                var response_data = JSON.parse(e.target.responseText);
+                var video_base64 = response_data["video_base64"];
+                // center video
+                $("#videoContainer").html("<center><video id='video' controls ><source src='data:video/mp4;base64," + video_base64 + "' type='video/mp4'></video></center>");
+            }
+        }
+        else{
+            $("#videoContainer").html("Error generating video avatar. Please try again.");
+        }
+        
+    };
+    xhr.onerror=function(e){
+        console.error(xhr.statusText);
+        $("#videoContainer").html("Error generating video avatar. Please try again.");
+    }
+
+    var fd=new FormData();
+    fd.append("audio_data_base64", audio_converted_base64);
+    fd.append("speaker", $("#speakerSelect_0").val());
+    xhr.open("POST", api_address + "/get_avatar",true);
+    xhr.send(fd);
+}
+
 function upload(){
 
     // for(var rn = 0; rn < total_examples; rn++){
@@ -272,6 +308,8 @@ function upload(){
 
     $("#uploadButton").html("Converting...");
     $("#uploadButton").prop("disabled", true);
+    
+    $("#convertedAudioTd_" + 0).html(loader_gif);
 
     var xhr=new XMLHttpRequest();
     xhr.onload=function(e) {
@@ -282,13 +320,20 @@ function upload(){
                 response_data = JSON.parse(e.target.responseText);
                 results = response_data["results"];
                 for(var rn = 0; rn < total_examples; rn++){
+                    audio_converted_base64 = results[rn]['audio_converted'];
                     audio_html = '<audio style="width:250px;" controls src="data:audio/wav;base64,' + results[rn]['audio_converted'] + '"></audio>'
                     $("#convertedAudioTd_" + rn).html(audio_html);
                 }
+                get_avatar();
             }
         }
         makeUploadButtonActive();
     };
+    xhr.onerror=function(e){
+        console.error(xhr.statusText);
+        $("#convertedAudioTd_" + 0).html("Error in converting audio. Please try again.");
+        makeUploadButtonActive();
+    }
     var fd=new FormData();
     fd.append("total_wavs", total_examples);
     fd.append("session_key", session_key);
@@ -339,7 +384,8 @@ function upload(){
     
     xhr.open("POST", api_address + "/convert_recordings",true);
     xhr.send(fd);
- }
+}
+
 
 
 $('.speakerSelector').change(function(){
