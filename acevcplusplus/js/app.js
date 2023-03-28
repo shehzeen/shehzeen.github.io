@@ -11,7 +11,7 @@ var loader_gif = '<img src="/acevcplusplus/gifs/loader.gif" style="width: 50px; 
 
 var gumStream;                      //stream from getUserMedia()
 var recorder;                       //WebAudioRecorder object
-var input;                          //MediaStreamAudioSourceNode  we'll be recording
+var input;                          //MediaStreamAudioSourceNode  we'll be  recording
 var encodingType;                   //holds selected encoding for resulting audio (file)
 var encodeAfterRecord = true;       // when to encode
 
@@ -33,18 +33,6 @@ var transcripts = [
 "",
 ]
 
-// var transcripts = [
-// "The rainbow is a division of white light into many beautiful colors.",
-// "Float the soap on top of the bath water. ",
-// "The committee will meet this afternoon for a special debate.",
-// "I am used to working all night, and sleeping all day.",
-// "The house door stood open, and the rooms were all so empty.",
-// "The square wooden crate was packed to be shipped.",
-// "Police were called to the scene, according to the weekend reports.",
-// "Out beyond ideas of wrongdoing and rightdoing there is a field, I'll meet you there.",
-// "They are, however, allowed to change, only it must be a complete change.",
-// "Then he gave me the key of the room, and left me with a thousand books."
-// ]
 
 var total_examples = 1;
 
@@ -53,12 +41,13 @@ var all_blobs = [];
 var target_speakers = [
     {'obama': 'Barack Obama'},
     {'modi' : 'Narendra Modi'},
-    {'priyanka' : 'Priyanka Chopra'},
     {'lex' : 'Lex Fridman'},
     {'oprah': 'Oprah'},
     {'emma': 'Emma Watson'},
+    {'miley' : 'Miley Cyrus'},
     {'aubrey' : 'Aubrey Plaza'},
     {'sundar' : 'Sundar Pichai'},
+    {'priyanka' : 'Priyanka Chopra'},
     {'custom': 'Custom (Select Audio File)'},
 ]
 
@@ -68,7 +57,7 @@ for(var row = 0; row < total_examples; row ++){
     var inputTypeSlectTd = "<td><select class='inputTypeSelector' id='inputTypeSelect_" + row + "'>";
     inputTypeSlectTd += "<option value='recording'>Recording</option><option value='file'>Select audio file</option></select></td>"
     var speakerSelectTd = "<td><select class='speakerSelector' id='speakerSelect_" + row + "'>";
-    var convertedAudioTd = "<td id='convertedAudioTd_" + row + "'></td>"
+    var convertedAudioTd = "<td id='convertedAudioTd_" + row + "'>" + "<button style='width:200px' id='uploadButton'>Convert Voice</button>"  + "</td>"
     var fileSelectTd = "<td style='display:None' class='targetCustomAudio' id='targetFileSelectTd_" + row + "'> <input type='file' id='targetFileSelect_" + row + "' accept='audio/*' /></td>"
     var selectedFileTd = "<td style='display:None' class='targetCustomAudio' id='selectedTargetFileTd_" + row + "'></td>"
     var sourceFileSelectTd = "<td style='display:None' class='sourceSelectControl' id='sourceFileSelectTd_" + row + "'> <input type='file' id='sourceFileSelect_" + row + "' accept='audio/*' /></td>"
@@ -309,7 +298,7 @@ function upload(){
     $("#uploadButton").html("Converting...");
     $("#uploadButton").prop("disabled", true);
     
-    $("#convertedAudioTd_" + 0).html(loader_gif);
+    $("#audioContainer").html(loader_gif);
 
     var xhr=new XMLHttpRequest();
     xhr.onload=function(e) {
@@ -322,7 +311,8 @@ function upload(){
                 for(var rn = 0; rn < total_examples; rn++){
                     audio_converted_base64 = results[rn]['audio_converted'];
                     audio_html = '<audio style="width:250px;" controls src="data:audio/wav;base64,' + results[rn]['audio_converted'] + '"></audio>'
-                    $("#convertedAudioTd_" + rn).html(audio_html);
+                    $("#audioContainer").html("Voice Converted Audio: " + audio_html);
+                    // $("#convertedAudioTd_" + rn).html(audio_html);
                 }
                 get_avatar();
             }
@@ -331,7 +321,7 @@ function upload(){
     };
     xhr.onerror=function(e){
         console.error(xhr.statusText);
-        $("#convertedAudioTd_" + 0).html("Error in converting audio. Please try again.");
+        $("#audioContainer").html("Error in converting audio. Please try again.");
         makeUploadButtonActive();
     }
     var fd=new FormData();
