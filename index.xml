@@ -46,7 +46,7 @@ The Challenge TEDxADMU always faced the same problems every year. How can we ele
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/news/</guid>
-      <description> March 2024: Our paper on Robust LLMs got accepted at USENIX 2024! Watch this space for more updates. January 2024: Our paper FaceSigns: Semi-Fragile Watermarks for Media Authentication got accepted at ACM Transactions on Multimedia Computing, Communications, and Applications! July 2023: Joined Nvidia as a Research Scientist after successfully defending my Ph.D!  </description>
+      <description>June 2024: I received the William S.C. Chang Best Ph.D. Dissertation Award, Electrical and Computer Engineering (ECE) Department at UC San Diego! May 2024: Our paper SelfVC got accepted at ICML 2024! March 2024: Our paper REMARK-LLM got accepted at USENIX Security 2024! January 2024: Our paper FaceSigns: Semi-Fragile Watermarks for Media Authentication got accepted at ACM Transactions on Multimedia Computing, Communications, and Applications! July 2023: I joined Nvidia as a Research Scientist after successfully defending my Ph.</description>
     </item>
     
     <item>
@@ -66,11 +66,13 @@ The Challenge TEDxADMU always faced the same problems every year. How can we ele
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/publications/</guid>
-      <description>FaceSigns: Semi-Fragile Watermarks for Media Authentication Paarth Neekhara*, Shehzeen Hussain*, Xinqiao Zhang, Ke Huang, Julian McAuley, Farinaz Koushanfar
-ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM) 2024
+      <description>SelfVC: Voice Conversion With Iterative Refinement using Self Transformations Paarth Neekhara*, Shehzeen Hussain*, Rafael Valle, Boris Ginsburg, Rishabh Ranjan, Shlomo Dubnov, Farinaz Koushanfar, Julian McAuley
+International Conference on Machine Learning (ICML) 2024
 [ * Equal Contribution ]
 [ paper ]
- NetFlick: Adversarial Flickering Attacks on Deep Learning Based Video Compression Jung-Woo Chang, Nojan Sheybani, Shehzeen Hussain, Mojan Javaheripi, Seira Hidano, Farinaz Koushanfar IEEE International Conference on Learning Representations (ICLR) Workshop on ML4IoT 2023</description>
+ REMARK-LLM: A Robust and Efficient Watermarking Framework for Generative Large Language Models Ruisi Zhang, Shehzeen Hussain, Paarth Neekhara, Farinaz Koushanfar
+USENIX Security Symposium (USENIX) 2024
+[ paper ]</description>
     </item>
     
     <item>
