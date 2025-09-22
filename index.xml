@@ -46,7 +46,7 @@ The Challenge TEDxADMU always faced the same problems every year. How can we ele
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/news/</guid>
-      <description>July 2024: Our paper Improving Robustness of LLM-based Speech Synthesis Models by Learning Monotonic Alignment got accepted at Interspeech 2024! June 2024: I received the William S.C. Chang Best Ph.D. Dissertation Award in Electrical and Computer Engineering (ECE) Department at UC San Diego! May 2024: Our paper SelfVC got accepted at ICML 2024! March 2024: Our paper REMARK-LLM got accepted at USENIX Security 2024! January 2024: Our paper FaceSigns: Semi-Fragile Watermarks for Media Authentication got accepted at ACM Transactions on Multimedia Computing, Communications, and Applications!</description>
+      <description>August 2025: Our paper Koel-TTS: Enhancing LLM based Speech Generation with Preference Alignment and Classifier Free Guidance got accepted at EMNLP 2025! August 2025: Our papers HiFiTTS-2 and NanoCodec got accepted at Interspeech 2025! July 2024: Our paper Improving Robustness of LLM-based Speech Synthesis Models by Learning Monotonic Alignment got accepted at Interspeech 2024! June 2024: I received the William S.C. Chang Best Ph.D. Dissertation Award in Electrical and Computer Engineering (ECE) Department at UC San Diego!</description>
     </item>
     
     <item>
@@ -66,12 +66,10 @@ The Challenge TEDxADMU always faced the same problems every year. How can we ele
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/publications/</guid>
-      <description>Improving Robustness of LLM-based Speech Synthesis Models by Learning Monotonic Alignment Paarth Neekhara*, Shehzeen Hussain*, Subhankar Ghosh, Jason Li, Rafael Valle, Rohan Badlani, Boris Ginsburg
-Interspeech 2024
-[ * Equal Contribution ]
-[ paper, blog, audio examples ]
- SelfVC: Voice Conversion With Iterative Refinement using Self Transformations Paarth Neekhara*, Shehzeen Hussain*, Rafael Valle, Boris Ginsburg, Rishabh Ranjan, Shlomo Dubnov, Farinaz Koushanfar, Julian McAuley
-International Conference on Machine Learning (ICML) 2024</description>
+      <description>Koel-TTS: Enhancing LLM based Speech Generation with Preference Alignment and Classifier Free Guidance Shehzeen Hussain, Paarth Neekhara, Xuesong Yang, Edresson Casanova, Subhankar Ghosh, Mikyas T Desta, Roy Fejgin, Rafael Valle, Jason Li
+Conference on Empirical Methods in Natural Language Processing EMNLP 2025, ICML 2025 Workshop on Machine Learning for Audio AI Heard That!
+[ paper, ICML Workshop, audio examples ]
+ NanoCodec: Towards High-Quality Ultra Fast Speech LLM Inference Edresson Casanova, Paarth Neekhara, Ryan Langman, Shehzeen Hussain, Subhankar Ghosh, Xuesong Yang, Ante Jukić, Jason Li, Boris Ginsburg</description>
     </item>
     
     <item>
@@ -82,7 +80,7 @@ International Conference on Machine Learning (ICML) 2024</description>
       <guid>/research_experience/</guid>
       <description>NVIDIA Corporation July 2023 - Present
 Santa Clara, California
-Research Scientist - Conversational AI
+Senior Research Scientist - Conversational AI
 Investigating Large Language Models for multi-lingual voice conversion and robust text-to-speech synthesis.
  NVIDIA Corporation June 2022 - September 2022
 Santa Clara, California
